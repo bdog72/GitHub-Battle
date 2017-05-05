@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 
-class App extends Component {
+import Rrouter from './Rrouter'
+
+export default class App extends Component {
   render () {
     return <div>
-      <h1>Hello, World!</h1>
+      <Rrouter />
     </div>
   }
 }
-
-export default App
