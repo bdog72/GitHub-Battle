@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
-
-import Rrouter from './Rrouter'
-
+import Popular from './Popular'
 export default class App extends Component {
   render () {
-    return <div>
-      <Rrouter />
+    return <div className='container'>
+      <Popular />
     </div>
   }
 }
