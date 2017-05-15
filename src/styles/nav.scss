@@ -1,0 +1,17 @@
+.nav {
+  display: flex;
+
+  li {
+    margin-right: 15px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.active {
+  font-weight: bold;
+  color: red;
+  font-size: 20px;
+}

@@ -1,0 +1,40 @@
+@import 'utility';
+
+$base-text-size: 16px;
+$base-font-family: sans-serif;
+
+html {
+  @include full-height;
+}
+
+body {
+  margin: 0;
+  font: $base-text-size / 1 $base-font-family;
+}
+
+ul {
+  padding: 0;
+
+  li {
+    list-style-type: none;
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .languages {
+    display: flex;
+    justify-content: center;
+
+    .languages li {
+      // margin: 10px;
+      cursor: pointer;
+    }
+  }
+}

@@ -8,32 +8,18 @@ html {
 }
 
 body {
-  margin: 0;
   font: $base-text-size / 1 $base-font-family;
-}
-
-ul {
-  padding: 0;
-
-  li {
-    list-style-type: none;
-    padding: 5px;
-    font-size: 20px;
-  }
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
 
-  .languages {
-    display: flex;
-    justify-content: center;
+ul {
+  padding: 0;
+}
 
-    .languages li {
-      margin: 10px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-  }
+li {
+  list-style-type: none;
 }
