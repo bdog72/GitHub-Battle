@@ -3,7 +3,7 @@
   "scripts": {
     "deploy": "yarn build && surge ./public --domain weather-app.brianbycynski.surge.sh",
     "start": "webpack-dev-server",
-    "prebuild": "rm -f public/index.html public/app-*.js public/vendor-*.js public/screen-*.css",
+    "prebuild": "rm -f public/index.html public/app-*.js public/vendor-*.js public/app-*.css",
     "build": "NODE_ENV=production webpack --progress"
   },
   "dependencies": {

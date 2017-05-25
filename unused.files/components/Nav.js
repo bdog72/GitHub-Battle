@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
+import '../styles/nav.scss'
 import { NavLink } from 'react-router-dom'
 
-var Nav1 = () => {
+function Nav1 () {
   return (
     <ul className='nav'>
       <li>
@@ -16,7 +17,6 @@ var Nav1 = () => {
     </ul>
   )
 }
-
 export default class Nav extends Component {
   render () {
     return <div>
