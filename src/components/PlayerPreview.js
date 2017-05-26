@@ -1,9 +1,21 @@
-import React, { Component } from 'react'
+var React = require('react')
+var PropTypes = require('prop-types')
 
-export default class PlayerPreview extends Component {
-  render () {
-    return <div>
-      Bdoggy
+function PlayerPreview (props) {
+  return (
+    <div>
+      <div className='column'>
+        <img className='avatar'
+          src={props.avatar}
+        />
+        <h2 className='username'>@{props.username}</h2>
+      </div>
+      {props.children}
     </div>
-  }
+  )
 }
+PlayerPreview.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  username: PropTypes.string.isRequired
+}
+module.exports = PlayerPreview
