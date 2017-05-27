@@ -5,7 +5,7 @@ var Nav1 = () => {
   return (
     <ul className='nav'>
       <li>
-        <NavLink exact activeClassName='active' to='/'><h2>Homey</h2></NavLink>
+        <NavLink exact activeClassName='active' to='/'><h2>Home</h2></NavLink>
       </li>
       <li>
         <NavLink activeClassName='active' to='/battle'><h2>Battle</h2></NavLink>

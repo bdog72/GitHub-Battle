@@ -53,7 +53,7 @@ function sortPlayers (players) {
 }
 
 module.exports = {
-  battle: (players) => {
+  battle: function (players) {
     return axios.all(players.map(getUserData))
     .then(sortPlayers)
     .catch(handleError)

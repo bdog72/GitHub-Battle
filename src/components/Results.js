@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import Loading from './Loading'
 var PlayerPreview = require('./PlayerPreview')
 var PropTypes = require('prop-types')
 var queryString = require('query-string')
@@ -59,8 +60,8 @@ export default class Results extends Component {
     api.battle([
       players.playerOneName,
       players.playerTwoName
-    ]).then((results) => {
-      if (results === null) {
+    ]).then((players) => {
+      if (players === null) {
         return this.setState(() => {
           return {
             error: 'Looks like there was a error',
@@ -71,8 +72,8 @@ export default class Results extends Component {
       this.setState(() => {
         return {
           error: null,
-          winner: results[0],
-          loser: results[1],
+          winner: players[0],
+          loser: players[1],
           loading: false
         }
       })
@@ -86,7 +87,7 @@ export default class Results extends Component {
     var loading = this.state.loading
 
     if (loading === true) {
-      return <p>Loading</p>
+      return <Loading />
     }
 
     if (error) {

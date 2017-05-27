@@ -114,7 +114,7 @@ export default class Battle extends Component {
             username={playerOneName}>
 
             <button className='reset'
-              onClick={this.handleReset.bind(null, 'playerOne')}>
+              onClick={this.handleReset.bind(this, 'playerOne')}>
               Reset
             </button>
           </PlayerPreview>}
@@ -130,7 +130,7 @@ export default class Battle extends Component {
             avatar={playerTwoImage}
             username={playerTwoName}>
             <button className='reset'
-              onClick={this.handleReset.bind(null, 'playerTwo')}>
+              onClick={this.handleReset.bind(this, 'playerTwo')}>
               Reset
             </button>
           </PlayerPreview>}
