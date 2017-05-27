@@ -5,13 +5,13 @@ var Nav1 = () => {
   return (
     <ul className='nav'>
       <li>
-        <NavLink exact activeClassName='active' to='/'>Home</NavLink>
+        <NavLink exact activeClassName='active' to='/'><h2>Homey</h2></NavLink>
       </li>
       <li>
-        <NavLink activeClassName='active' to='/battle'>Battle</NavLink>
+        <NavLink activeClassName='active' to='/battle'><h2>Battle</h2></NavLink>
       </li>
       <li>
-        <NavLink activeClassName='active' to='/popular'>Popular</NavLink>
+        <NavLink activeClassName='active' to='/popular'><h2>Popular</h2></NavLink>
       </li>
     </ul>
   )
